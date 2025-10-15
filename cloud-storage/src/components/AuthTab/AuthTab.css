@@ -1,0 +1,40 @@
+.tabSection {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 100, 255, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: #f8fafc;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tabs button:hover {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.tabs button.active {
+  background: #1976d2;
+  color: white;
+  font-weight: 500;
+}

@@ -1,0 +1,59 @@
+.welcome {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 100, 255, 0.1);
+  text-align: center;
+}
+
+.card h1 {
+  color: #1976d2;
+  margin: 0 0 10px 0;
+}
+
+.card p {
+  color: #666;
+  margin: 0 0 25px 0;
+}
+
+.instruction {
+  text-align: left;
+}
+
+.instruction h3 {
+  color: #333;
+  margin: 0 0 15px 0;
+}
+
+.instruction ul {
+  color: #666;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.instruction li {
+  margin-bottom: 8px;
+}
+.btnOut {
+  margin-top: 2rem;
+  width: 90%;
+  padding: 1rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btnOut:hover {
+  background: #1565c0;
+}

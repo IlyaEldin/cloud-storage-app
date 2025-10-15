@@ -1,0 +1,40 @@
+.dropZone {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+}
+
+.dropZone.dragOver {
+  background-color: rgba(25, 118, 210, 0.1);
+  border: 2px dashed #1976d2;
+}
+
+.dropOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border: 3px dashed #1976d2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dropContent {
+  text-align: center;
+  color: #1976d2;
+}
+
+.dropIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.dropText {
+  font-size: 18px;
+  font-weight: 500;
+}

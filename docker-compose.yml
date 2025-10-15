@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./cloud-storage
+    ports:
+      - "80:5174" # ← внешний порт 80, внутренний 5174
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - NODE_ENV=production
+
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend/src/database:/app/src/database:rw
+      - ./backend/src/user_files:/app/src/user_files:rw
+    environment:
+      - NODE_ENV=production
+
+volumes:
+  backend_data:

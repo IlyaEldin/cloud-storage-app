@@ -1,0 +1,101 @@
+.explorer {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.userPanel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoutButton {
+  padding: 8px 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background: #1565c0;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.uploadButton {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.uploadButton:hover {
+  background: #1565c0;
+}
+
+.search {
+  position: relative;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.search input {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.search::before {
+  content: "🔍";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 14px;
+}
+.uploadHint {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px dashed #ddd;
+}
+
+.emptyState {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+  font-size: 16px;
+}
