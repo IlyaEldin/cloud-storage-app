@@ -51,7 +51,7 @@
 - Node.js 18+ или Docker и Docker Compose
 
 ```bash
-git clone <https://github.com/IlyaEldin/cloud-storage-app.git>
+git clone https://github.com/IlyaEldin/task-manager-app.git
 cd cloud-storage-app
 docker-compose up -d --build
 
